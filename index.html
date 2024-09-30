@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Medisphere - Empowering Health</title>
+</head>
+<body>
+    <header>
+        <div class="company-name">Medisphere</div>
+        <nav>
+            <ul>
+                <li><a id="aboutUsBtn" href="#">About Us</a></li>
+                <li><a href="#loginModal">Login</a></li>
+                <li><a href="#profileModal">Profile</a></li>
+                <li><a href="#healthRecord">Health Record</a></li>
+                <li><a id="healthEduBtn" href="#">Health Education</a></li>
+                <li><a href="#personalizedCareModal">Personalized Care</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Chronic Disease Section -->
+<main>
+  <section id="chronicDiseaseSection" style="display: flex; flex-direction: column; padding: 50px 0; margin-left: 0; width: 100%; box-sizing: border-box;">
+
+    <!-- First Row: H1 and Health Image -->
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h1 style="font-size: 3em; color: #003366; text-align: left; width: 50%;">Medisphere: Bridging the Gap in Healthcare</h1>
+      <img src="./health img.jpg" alt="Health Image" style="width: 40%; height: auto;">
+    </div>
+  
+    <!-- Second Row: Paragraph and Public Health Image -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
+      <div style="width: 50%; padding: 20px; background-color: #f4f4f4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        
+        <h3style="text-align: left; margin: 0;">
+          Medisphere is a digital healthcare platform designed to empower underserved populations in India by providing accessible, personalized preventive care and health education resources. Our team is dedicated to addressing the challenges of chronic disease management and promoting better health outcomes for all.</h3>
+      </div>
+      <img src="./public health.jpg" alt="Public Health Image" style="width: 40%; height: auto;">
+    </div>
+  
+  </section>
+  
+
+</main>
+    <footer>
+        <p>&copy; 2024 Medisphere. All rights reserved.</p>
+    </footer>
+<!-- About Us Modal -->
+<div id="aboutUsModal" class="modal">
+    <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
+      <span class="close">&times;</span>
+      <h2>About Us</h2>
+      
+      <!-- Introduction -->
+      <h3>Introduction</h3>
+      <p>
+        Our platform is dedicated to providing preventive care and health education to underserved populations, focusing on reducing the incidence of chronic diseases.
+      </p>
+      
+      <!-- Mission -->
+      <h3>Our Mission</h3>
+      <p>
+        Our mission is to deliver accessible healthcare information and tools that help people take control of their health, fostering a healthier society.
+      </p>
+      
+      <!-- Team -->
+      <h3>Our Team</h3>
+      <p>
+        Founded by a passionate team of health enthusiasts and tech experts, we are committed to improving global health outcomes through innovative technology.
+      </p>
+      
+      <!-- Values -->
+      <h3>Our Values</h3>
+      <ul>
+        <li>Accessibility: We believe healthcare should be accessible to everyone.</li>
+        <li>Security: We ensure the highest level of data security for your health records.</li>
+        <li>Innovation: We leverage technology to offer the most effective healthcare solutions.</li>
+      </ul>
+      
+      <!-- Vision -->
+      <h3>Our Vision</h3>
+      <p>
+        Our vision is to empower individuals worldwide by providing personalized care and ensuring secure access to health records, improving overall wellbeing.
+      </p>
+    </div>
+  </div>
+  
+
+    <!-- Modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login to Medisphere</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Your Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create Your Profile</h2>
+            <form id="profile-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="number" placeholder="Your Age" required>
+                <select required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="number" placeholder="Your Weight (kg)" required>
+                <input type="text" placeholder="Your Blood Group" required>
+                <button type="submit">Create Profile</button>
+            </form>
+        </div>
+    </div>
+
+<!-- Health Education Modal -->
+<div id="healthEduModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Health Education</h2>
+    <button id="heartDiseaseBtn">Heart Diseases</button><br><br>
+    <button id="bloodPressureBtn">Blood Pressure</button><br><br>
+    <button id="diabetesBtn">Diabetes</button><br><br>
+    <button id="obesityBtn">Obesity</button>
+  </div>
+</div>
+
+<!-- Heart Disease Modal -->
+<div id="heartDiseaseModal" class="modal">
+    <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
+      <span class="close">&times;</span>
+      <h2>Heart Diseases</h2>
+      <img src="./heart disease.png" alt="heart" style="max-width: 100%; height: auto;">
+      <h2>Summary of Heart Disease Causes</h2>
+      <ul>
+          <li>Increased levels of cholesterol and triglycerides are a common cause of heart disease.</li>
+          <li>Consuming processed and junk foods contributes to heart disease.</li>
+          <li>Smoking and drinking alcohol increase the risk of heart disease.</li>
+          <li>Lack of exercise is a significant factor in developing heart disease.</li>
+          <li>Atherosclerosis occurs when plaque builds up in the artery walls.</li>
+          <li>Plaque buildup narrows the arteries, restricting blood flow.</li>
+          <li>Blood clots can form, further obstructing blood flow.</li>
+          <li>A blockage of blood flow can result in a heart attack or stroke.</li>
+      </ul>
+    </div>
+  </div>
+  
+
+<!-- Blood Pressure Modal -->
+<div id="bloodPressureModal" class="modal">
+    <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
+        <span class="close">&times;</span>
+        <h2>Blood Pressure</h2>
+        <img src="./hypertension.jpg" alt="blood pressure" style="max-width: 100%; height: auto;">
+        <h2>Summary of Hypertension (High Blood Pressure)</h2>
+        <ul>
+            <li>Over 100 million individuals in India suffer from hypertension.</li>
+            <li>Blood pressure is determined by the amount of blood the heart pumps and the resistance in the arteries.</li>
+            <li>Higher blood pressure results from increased blood volume and narrower arteries.</li>
+            <li>Increased BP levels above 120/80 mmHg are caused by high salt intake, stress, and obesity.</li>
+            <li>Individuals with hypertension are at a higher risk for other complications like diabetes, heart disease, and stroke.</li>
+            <li>Symptoms such as headaches, shortness of breath, or nosebleeds may occur but are not specific to high blood pressure.</li>
+            <li>These symptoms usually appear only when hypertension reaches a severe or life-threatening stage.</li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Diabetes Modal -->
+<div id="diabetesModal" class="modal">
+    <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
+    <span class="close">&times;</span>
+    <h2>Diabetes</h2>
+    <img src="./diabetes.webp" alt="diabetes" style="max-width: 100%; height: auto;">
+    <h2>Summary of Type 2 Diabetes</h2>
+    <ul>
+        <li>India has 61.3 million people suffering from Type 2 diabetes, making it the diabetes capital of the world.</li>
+        <li>Type 2 diabetes is caused by high blood sugar levels due to insulin resistance.</li>
+        <li>The pancreas initially produces extra insulin to compensate, but eventually fails to keep up.</li>
+        <li>Symptoms can be mild and often go unnoticed; approximately 8 million people with diabetes are unaware they have it.</li>
+        <li>Common symptoms include excessive thirst, frequent urination, blurry vision, irritability, tingling or numbness in hands or feet, fatigue, and slow-healing wounds.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Obesity Modal -->
+<div id="obesityModal" class="modal">
+    <div class="modal-content" style="max-height: 80vh; overflow-y: auto;">
+    <span class="close">&times;</span>
+    <h2>Obesity</h2>
+    <img src="./obesity.png" alt="obesity"  style="max-width: 100%; height: auto;">
+    <h2>Summary of Obesity</h2>
+    <ul>
+        <li>Obesity increases susceptibility to lifestyle diseases like diabetes and heart disease.</li>
+        <li>Obesity is defined as having excess body fat, distinct from being overweight.</li>
+        <li>Obesity develops over time when calorie intake exceeds calorie expenditure.</li>
+        <li>The balance between calories consumed and burned varies for each individual.</li>
+        <li>Young Indians are at a higher risk of obesity due to unhealthy habits such as poor diet, smoking, alcohol use, inactivity, stress, and lack of sleep.</li>
+        <li>Losing even 5 to 10 percent of body weight can help delay or prevent related diseases.</li>
+    </ul>
+  </div>
+</div>
+
+    <!-- Additional Modals for Health Education, Personalized Care, and Settings would follow similar structure -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
